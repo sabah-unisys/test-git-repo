@@ -1,0 +1,21 @@
+001000 IDENTIFICATION DIVISION.                                                     
+002000 PROGRAM-ID.TEST-COUNT.                                                       
+003000 ENVIRONMENT DIVISION.                                                        
+004000 DATA DIVISION.                                                               
+005000 WORKING-STORAGE SECTION.                                                     
+006000 01 V PIC 99 VALUE 0.                                                         
+007000 01 A PIC 999 VALUE 0.                                                        
+008000                                                                              
+009000 PROCEDURE DIVISION.                                                          
+010000                                                                              
+011000 P001.                                                                        
+012000    PERFORM P002 UNTIL V = 30.                                                
+013000                                                                              
+014000    STOP RUN.                                                                 
+015000 P001-EXIT. EXIT.                                                             
+016000                                                                              
+017000 P002.                                                                        
+018000    DISPLAY "The number is " V.                                               
+019000    ADD 1 TO V.                                                               
+020000 P002-EXIT. EXIT.                                                             
+021000                                                                              

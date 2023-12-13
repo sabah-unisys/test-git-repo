@@ -1,0 +1,22 @@
+001000IDENTIFICATION DIVISION.                                                      
+002000   PROGRAM-ID. LAB1_2.                                                        
+003000                                                                              
+004000ENVIRONMENT DIVISION.                                                         
+005000DATA DIVISION.                                                                
+006000   WORKING-STORAGE SECTION.                                                   
+007000   01 WS-X1 PIC 9(06) VALUE ZERO.                                             
+008000   01 WS-X2 PIC 9(06) VALUE ZERO.                                             
+009000   01 WS-RESULT PIC S9(06) VALUE ZERO.                                        
+010000                                                                              
+011000PROCEDURE DIVISION.                                                           
+012000   001-S   SECTION.                                                           
+013000    001-P.                                                                    
+014000      DISPLAY "ENTER TWO VALUES"                                              
+015000      ACCEPT WS-X1.                                                           
+016000      ACCEPT WS-X2.                                                           
+017000                                                                              
+018000      DISPLAY " ".                                                            
+019000                                                                              
+020000      COMPUTE WS-RESULT = WS-X2 - WS-X1.                                      
+021000      DISPLAY "Result is " WS-RESULT.                                         
+022000    001-EXIT. EXIT.                                                           

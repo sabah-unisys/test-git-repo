@@ -1,0 +1,11 @@
+BEGIN JOB TEMP_JOB2;                                                              00001000
+STRING S1;                                                                        00002000
+DISPLAY "STARTING...";                                                            00003000
+S1 := ACCEPT("Enter the string value ");                                          00004000
+DISPLAY(S1);                                                                      00004250
+                                                                                  00004333
+RUN OBJECT/SOURCES/COUNT1;                                                        00004416
+                                                                                  00004500
+DISPLAY "END JOB";                                                                00004750
+                                                                                  00005000
+END JOB;                                                                          00006000
